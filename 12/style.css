@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Fredoka One', cursive;
+    background: url(https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) no-repeat;
+    color: #fff;
+}
+
+.container {
+    width: 95%;
+    margin: auto;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 25px 0;
+}
+
+.nav h2 {
+    font-size: 2rem;
+}
+
+.user-input {
+    width: 350px;
+    text-align: center;
+}
+
+.user-input input {
+    width: 80%;
+    outline: none;
+    font-size: 16px;
+    padding: 15px;
+    border: 1px solid lightgoldenrodyellow;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    transition: all 0.30s ease-in-out;
+}
+
+.user-input input:focus{
+    box-shadow: 0 0 10px #00003e;
+    border: 1px solid #00003e;
+}
+
+.user-input button{
+    cursor: pointer;
+    padding: 15px;
+    width: fit-content;
+    transition: 1s;
+    outline: none;
+    background-color: lightcyan;
+    border: 1px solid lightcyan;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.user-input button:hover{
+    background-color: transparent;
+    color: white;
+}
+
+.to-do-items{
+    width: 400px;
+    margin: auto;
+    border-radius: 5px;
+    color: black;
+}
+
+.items{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    border-radius: 2px;
+    padding: 16px;
+    color: #454545;
+    margin-top: 10px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    transition: all 0.30s ease-in-out;
+}
+
+.items:hover{
+    box-shadow: 0 0 20px #00003e;
+    border: 1px solid #00003e;
+}
+
+.items i{
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+@media(max-width:768px){
+    .nav{
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .nav h2{
+        margin: 10px 0;
+    }
+
+    .user-input{
+        width: 100%;
+    }
+
+    .to-do-items{
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+        .user-input input {
+            width: 74%;
+        }
+}
+
+@media (max-width: 320px) {
+    .user-input input{
+        width: 60%;
+    }
+}
